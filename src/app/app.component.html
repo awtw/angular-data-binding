@@ -7,7 +7,7 @@
   <div class="row">
     <app-server-element *ngFor="let element of serverElements" 
 	[srvElement]="element">
-		<p>
+		<p #contentParagraph>
 			<strong *ngIf="element.type === 'server'" style="color: red">{{ element.content }}</strong>
 			<em *ngIf="element.type === 'blueprint'">{{ element.content }}</em>
 		</p>
